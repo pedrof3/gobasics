@@ -19,7 +19,7 @@ func Printer() {
 func linux(ch chan<- bool) {
 	for i := 0; i < 200; i++ {
 		fmt.Printf("%d Linux\n", i)
-		time.Sleep(time.Millisecond * 10)
+		time.Sleep(time.Millisecond * 6)
 	}
 	ch <- true
 	close(ch)
@@ -28,7 +28,7 @@ func linux(ch chan<- bool) {
 func cybersecurity(ch chan<- bool) {
 	for i := 0; i < 200; i++ {
 		fmt.Printf("%d Cybersecurity\n", i)
-		time.Sleep(time.Millisecond * 15)
+		time.Sleep(time.Millisecond * 8)
 	}
 	ch <- true
 	close(ch)
