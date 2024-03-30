@@ -1,12 +1,11 @@
+/*
+Copyright © 2024 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import (
-	// "github.com/pedrof3/gobasics/cmd/goroutines"
-	"github.com/pedrof3/gobasics/cmd/jsons"
-)
+import "github.com/pedrof3/gobasics/cmd"
 
 func main() {
-	// goroutines.Printer()
-	jsons.MarshalExample()
-	jsons.UnmarshalExample()
+	cmd.Execute()
 }
